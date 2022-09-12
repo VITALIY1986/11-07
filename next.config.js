@@ -31,10 +31,3 @@ module.exports =   {
         domains: [ allowedImageWordPressDomain, 'pentru-par.cos-laboratories.com' ],
     },
 };
-const withPWA = require('next-pwa')({
-    dest: 'public'
-  })
-  
-  module.exports = withPWA({
-    // next.js config
-  })
