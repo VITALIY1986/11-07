@@ -16,11 +16,11 @@ function MyApp({ Component, pageProps }) {
   
   return <AuthContextProvider><AppProvider><SearchProvider><ApolloProvider client={client}><Component {...pageProps}  />
   <Head>
-  <meta name="application-name" content="PWA App" />
+  <meta name="application-name" content="C.O.S. Laboratories" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-<meta name="apple-mobile-web-app-title" content="PWA App" />
-<meta name="description" content="Best PWA App in the world" />
+<meta name="apple-mobile-web-app-title" content="Vitamine pentru par complex de recuperare" />
+<meta name="description" content="Vitamine naturale de la producător" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="msapplication-config" content="/icons/browserconfig.xml" />
@@ -41,17 +41,17 @@ function MyApp({ Component, pageProps }) {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:url" content="https://yourdomain.com" />
-<meta name="twitter:title" content="PWA App" />
-<meta name="twitter:description" content="Best PWA App in the world" />
-<meta name="twitter:image" content="https://yourdomain.com/icons/android-chrome-192x192.png" />
+<meta name="twitter:url" content="https://pentru-par.cos-laboratories.com" />
+<meta name="twitter:title" content=" Vitamine pentru par complex de recuperare" />
+<meta name="twitter:description" content="Vitamine naturale de la producător" />
+<meta name="twitter:image" content="https://pentru-par.cos-laboratories.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fpattern_chant.6baaf591189f0b631d32b3b48e81a803.jpg&w=3840&q=75" />
 <meta name="twitter:creator" content="@DavidWShadow" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="PWA App" />
-<meta property="og:description" content="Best PWA App in the world" />
-<meta property="og:site_name" content="PWA App" />
-<meta property="og:url" content="https://yourdomain.com" />
-<meta property="og:image" content="https://yourdomain.com/icons/apple-touch-icon.png" />
+<meta property="og:title" content=" Vitamine pentru par complex de recuperare" />
+<meta property="og:description" content="Vitamine naturale de la producător" />
+<meta property="og:site_name" content="C.O.S. Laboratories" />
+<meta property="og:url" content="https://pentru-par.cos-laboratories.com" />
+<meta property="og:image" content="https://pentru-par.cos-laboratories.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fpattern_chant.6baaf591189f0b631d32b3b48e81a803.jpg&w=3840&q=75" />
   </Head>
   </ApolloProvider></SearchProvider></AppProvider></AuthContextProvider>
 
