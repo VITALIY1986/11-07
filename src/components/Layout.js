@@ -19,11 +19,7 @@ const Layout = (props) => {
    
    
         <div className="wrapper">
-          <Head>
-      
-            <title>Vitamine pentru par</title>
-            
-          </Head>
+        
           <Header />
         
           {props.children}
