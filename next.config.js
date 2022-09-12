@@ -3,8 +3,11 @@
 
 const path = require("path");
 const allowedImageWordPressDomain = new URL(process.env.NEXT_PUBLIC_WORDPRESS_URL).hostname
-
-module.exports =   {
+const withPWA = require('next-pwa')({
+    dest: 'public'
+  })
+  
+  module.exports = withPWA({
     i18n: {
         locales: ["ro"],
         defaultLocale: "ro",
@@ -30,4 +33,5 @@ module.exports =   {
     images: {
         domains: [ allowedImageWordPressDomain, 'pentru-par.cos-laboratories.com' ],
     },
-};
+  })
+
