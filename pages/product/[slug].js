@@ -31,18 +31,17 @@ const price = login+paste ;
 const amount = par - product?.price;
 const interest = par/100;
 const result = amount/interest;
- // initially until getStaticProps() finishes running
+
 
     const router = useRouter()
 
-    // If the page is not yet generated, this will be displayed
-    // initially until getStaticProps() finishes running
+   
     if (router.isFallback) {
         return <div>Loading...</div>
     }
-console.log(product.shortDescription);
+
 	return (
-		<Layout title={product} description={product.description}>
+		<Layout title={product.name } >
 			{ product ? (
 				<div className="single-product  mx-auto pt-32 pb-96 xl:px-0 bg-grey_cos">
 					<div className="grid md:grid-cols-2 gap-4">
