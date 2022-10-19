@@ -22,7 +22,8 @@ export default function CategorySingle( props ) {
     const { categoryName, products } = props;
 
     return (
-        <Layout>
+        
+        <Layout title={categoryName}>
             <div className="product-categories-container   py-32  xl:px-0 px-3 bg-grey_cos">
                 { categoryName ? <h3 className="text-2xl mb-5 uppercase">{ categoryName }</h3> : '' }
                 <div className="product-categories grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">

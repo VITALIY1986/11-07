@@ -101,12 +101,17 @@ const News = [
 
 	
 	
+	let meta = {     
+		title: "Vitamine pentru par complex de recuperare",  
+		description: "Vitamine naturale de la producător" 
+	  };
 
+
+	
 
 	return (
 	
-		
-			<Layout>
+		<Layout title={meta.title} description={meta.description} >
 				<Script strategy="lazyOnload">
         {`
             window.replainSettings = { id: '57c23d8c-ad58-4f57-b0bc-d65f546cf0d4' };
