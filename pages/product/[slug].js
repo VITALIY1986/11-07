@@ -42,7 +42,7 @@ const result = amount/interest;
     }
 console.log(product.shortDescription);
 	return (
-		<Layout>
+		<Layout title={product} description={product.description}>
 			{ product ? (
 				<div className="single-product  mx-auto pt-32 pb-96 xl:px-0 bg-grey_cos">
 					<div className="grid md:grid-cols-2 gap-4">
