@@ -15,6 +15,7 @@ export const PRODUCT_BY_SLUG_QUERY = gql` query Product($slug: ID!) {
             title
             altText
             mediaItemUrl
+		
           }
       }
 	  image {

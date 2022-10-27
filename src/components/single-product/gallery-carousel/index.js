@@ -1,7 +1,7 @@
 import { isEmpty, isArray } from 'lodash';
 import {useState, useRef} from 'react';
 
-const GalleryCarousel = ({gallery}) => {
+const GalleryCarousel = ({gallery,alttext }) => {
 
     if ( isEmpty(gallery) || ! isArray( gallery ) ) {
         return null;
@@ -52,10 +52,10 @@ const GalleryCarousel = ({gallery}) => {
                     gallery.map( ( item, index ) => {
                         const opacity = ( activeIndex === index || 1 === gallery.length ) ? 'opacity-100' : 'opacity-0';
                         return (
-                            <div key={item?.id} className={`${opacity} banner-img-container absolute top-0 left-0`}>
+                            <div key={item?.id} className={`${opacity} banner-img-container absolute top-0 left-0 md:left-1/4   md:w-3/5`}>
                                 <img
-                                    src={item?.mediaItemUrl} loading="lazy" alt={ item?.altText ? item?.altText : item?.title }
-                                   
+                                    src={item?.mediaItemUrl} loading="lazy" alt={ alttext }
+                                    
                                   
                                 />
                                    <div className="slider-button w-full flex justify-between bg">

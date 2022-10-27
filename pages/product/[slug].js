@@ -39,7 +39,7 @@ const result = amount/interest;
     if (router.isFallback) {
         return <div>Loading...</div>
     }
-
+   
 	return (
 		<Layout title={product.name } >
 			{ product ? (
@@ -49,11 +49,11 @@ const result = amount/interest;
                         { product.featured  ? <div className="bg-red-400 rounded-full absolute right-2 top-2 z-10 text-white p-2">NEW</div>: ''}
 { product?.salePrice  ? <div className=" bg-red-400 rounded-full absolute left-2 top-2 z-10 text-white p-6 w-20 h-20 flex justify-center items-center">-{ procent.toFixed(0)}%</div> : ''}
 							{ !isEmpty( product?.galleryImages?.nodes ) ? (
-                                <GalleryCarousel gallery={product?.galleryImages?.nodes}/>
+                                <GalleryCarousel gallery={product?.galleryImages?.nodes} alttext={product.sku}/>
 							) : !isEmpty( product.image ) ? (
                                 <img
                                     src={ product?.image?.sourceUrl }
-                                    alt="Product Image"
+                                 
                                     width="100%"
                                     height="auto"
                                     srcSet={ product?.image?.srcSet }
