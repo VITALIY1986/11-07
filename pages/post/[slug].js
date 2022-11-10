@@ -51,7 +51,7 @@ export default function Post(props) {
         <>
 		<Head>
         <title>Biotina pentru par de la producator C.O.S. Laboratories </title>
-    <meta name="description" content={props.description} />
+    
     <meta name="viewport" content="initial-scale=1.0, width=device-width" /> 
         </Head>
 			<Layout>
