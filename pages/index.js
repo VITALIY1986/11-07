@@ -28,7 +28,7 @@ import Girlpng from "../public/second-cos.png"
 import BootCa from "../public/bootle/boot-c.png"
 import BootCa1 from "../public/bootle/biotina.png"
 import BootCa2 from "../public/bootle/complex-b.png"
-
+import Post from "../src/components/Post";
 import Bgfoll from "../public/block_third/vypadenie.jpg"
 import Bgfoll2 from "../public/block_third/feeling.jpg"
 
@@ -475,7 +475,14 @@ const News = [
 				</div>
 				</div>
 			
-		
+				<div className="products container mx-auto my-32 px-4 ">
+					<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">sadfasdf</span></h2>
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+						{ news.length ? (
+							news.map( post => <Post key={ post.id } post={ post }/> )
+						) : '' }
+					</div>
+				</div>
 				
 			</Layout>
 		
