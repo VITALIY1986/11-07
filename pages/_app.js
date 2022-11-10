@@ -42,13 +42,13 @@ function MyApp({ Component, pageProps }) {
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:url" content="https://pentru-par.cos-laboratories.com" />
-<meta name="twitter:title" content=" Vitamine pentru par complex de recuperare" />
-<meta name="twitter:description" content="Vitamine naturale de la producător" />
+{/*<meta name="twitter:title" content=" Vitamine pentru par complex de recuperare" />
+<meta name="twitter:description" content="Vitamine naturale de la producător" />*/}
 <meta name="twitter:image" content="https://pentru-par.cos-laboratories.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fpattern_chant.6baaf591189f0b631d32b3b48e81a803.jpg&w=3840&q=75" />
 <meta name="twitter:creator" content="@DavidWShadow" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content=" Vitamine pentru par complex de recuperare" />
-<meta property="og:description" content="Vitamine naturale de la producător" />
+{/*<meta property="og:title" content=" Vitamine pentru par complex de recuperare" />
+<meta property="og:description" content="Vitamine naturale de la producător" />*/}
 <meta property="og:site_name" content="C.O.S. Laboratories" />
 <meta property="og:url" content="https://pentru-par.cos-laboratories.com" />
 <meta property="og:image" content="https://pentru-par.cos-laboratories.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fpattern_chant.6baaf591189f0b631d32b3b48e81a803.jpg&w=3840&q=75" />
