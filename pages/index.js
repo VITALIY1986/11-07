@@ -28,7 +28,7 @@ import Girlpng from "../public/second-cos.png"
 import BootCa from "../public/bootle/boot-c.png"
 import BootCa1 from "../public/bootle/biotina.png"
 import BootCa2 from "../public/bootle/complex-b.png"
-
+import {  useEffect } from 'react'
 import Bgfoll from "../public/block_third/vypadenie.jpg"
 import Bgfoll2 from "../public/block_third/feeling.jpg"
 
@@ -49,6 +49,8 @@ import BgfollIcon5 from "../public/block_third/icons90.png"
 import BgfollIcon6 from "../public/block_third/icons91.png"
 
 export default function Home (props) {
+
+	
 	
 	const { isLoggedIn } = useAuth();
 
@@ -99,9 +101,52 @@ const News = [
 	];
 	News.map(( post,index )=>items.push(<Coment key={ post.id } index={index} post={ post } />) );
 
-	
-	
 
+     
+	
+	  useEffect(() => {
+	
+		document.getElementById("tunnel").animate([
+			
+			{ transform: 'translateX(0px 5px)', },
+			{ transform: 'translateY(-30px)' },
+			{ transform: 'translateX(0px 5px)' },
+			
+		
+		  ], {
+			// timing options
+			duration: 4000 ,
+			
+			iterations: Infinity
+		  })
+		  document.getElementById("tunnel1").animate([
+			
+			{ transform: 'translateY(0px 3px)', },
+			{ transform: 'translateX(-20px)' },
+			{ transform: 'translateY(0px 3px)' },
+			
+		
+		  ], {
+			// timing options
+			duration: 5000 ,
+			
+			iterations: Infinity
+		  })
+		  document.getElementById("tunnel2").animate([
+			
+			{ transform: 'translateY(0px 3px)', },
+			{ transform: 'translateX(-20px)' },
+			{ transform: 'translateY(0px 3px)' },
+			
+		
+		  ], {
+			// timing options
+			duration: 5000 ,
+			
+			iterations: Infinity
+		  })
+	  })
+	
 
 	return (
 	
@@ -164,7 +209,7 @@ const News = [
 			
 	{/*Hero 2*/}
 		<div id="pasul-one"  className="flex items-center justify-center pt-60 pb-60 flex-col md:flex-row overflow-hidden">
-		<h2 className="text-2xl text-center mb-20  font-semibold block md:hidden">Restabileste sănătatea și frumusețea părului tau</h2>
+		<h2 	 className="text-2xl text-center mb-20  font-semibold block md:hidden">Restabileste sănătatea și frumusețea părului tau</h2>
 			<div>
 			    <div className="relative">
 			      	<Image
@@ -176,7 +221,7 @@ const News = [
 				  	/>
 				<div className="absolute top-0 w-52 position-bootle-ca">
 							<Image
-							
+						     id='tunnel'
 							src={BootCa}
 							alt="Picture of the author"
 							
@@ -184,6 +229,7 @@ const News = [
 				  		</div>
 				  		<div className="absolute top-0 w-52 position-bootle-za">
 							<Image
+								id='tunnel1'
 							src={BootCa1}
 							alt="Picture of the author"
 							
@@ -191,7 +237,7 @@ const News = [
 				  		</div>
 						  <div className="absolute top-0 w-52 position-bootle-la">
 							<Image
-							
+								id='tunnel2'
 							src={BootCa2}
 							alt="Picture of the author"
 							
