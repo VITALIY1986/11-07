@@ -8,7 +8,6 @@ import GalleryCarousel from "../../src/components/single-product/gallery-carouse
 import Price from "../../src/components/single-product/price";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Head from "next/head";
 export default function Post(props) {
 	const { post } = props;
 
@@ -48,12 +47,7 @@ export default function Post(props) {
     }
 
 	return (
-        <>
-		<Head>
-        <title>Biotina pentru par de la producator C.O.S. Laboratories </title>
-    
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" /> 
-        </Head>
+		
 			<Layout>
                 <div className="flex flex-col lg:flex-row mx-3 md:mx-10 lg:mx-20 lg:flex    my-20">
                     	
@@ -74,7 +68,7 @@ export default function Post(props) {
 		            </div>
                 </div>
             </Layout>	
-            </>               
+                           
 	
 	);
 };

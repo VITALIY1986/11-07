@@ -45,8 +45,8 @@ const result = amount/interest;
 					</a>
 					
 				</Link>
-				<div className="text-center  ">{product.name}</div>
-				<div className="product-info text-center  md:p-5">
+				<div className="text-center pl-2 md:pl-3">{product.name}</div>
+				<div className="product-info text-center pl-2 md:pl-3">
 					
 				
 					{/*{product?.regularPrice }/////{product?.salePrice }/////{product?.price}*/}

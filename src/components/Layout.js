@@ -15,21 +15,17 @@ Router.events.on("routeChangeError", () => NProgress.done());
 const Layout = (props) => {
   
   return (
- <>
-    <Head>
-    <title>{props.title}</title>
-    <meta name="description" content={props.description} />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  </Head>
+ 
+   
    
         <div className="wrapper">
-        
+          
           <Header />
         
           {props.children}
           <Footer />
         </div>
-        </>
+  
   );
 };
 

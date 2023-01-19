@@ -31,17 +31,18 @@ const price = login+paste ;
 const amount = par - product?.price;
 const interest = par/100;
 const result = amount/interest;
-
+ // initially until getStaticProps() finishes running
 
     const router = useRouter()
 
-   
+    // If the page is not yet generated, this will be displayed
+    // initially until getStaticProps() finishes running
     if (router.isFallback) {
         return <div>Loading...</div>
     }
-   
+console.log(product.shortDescription);
 	return (
-		<Layout title={product.name } >
+		<Layout>
 			{ product ? (
 				<div className="single-product  mx-auto pt-32 pb-96 xl:px-0 bg-grey_cos">
 					<div className="grid md:grid-cols-2 gap-4">
@@ -49,11 +50,11 @@ const result = amount/interest;
                         { product.featured  ? <div className="bg-red-400 rounded-full absolute right-2 top-2 z-10 text-white p-2">NEW</div>: ''}
 { product?.salePrice  ? <div className=" bg-red-400 rounded-full absolute left-2 top-2 z-10 text-white p-6 w-20 h-20 flex justify-center items-center">-{ procent.toFixed(0)}%</div> : ''}
 							{ !isEmpty( product?.galleryImages?.nodes ) ? (
-                                <GalleryCarousel gallery={product?.galleryImages?.nodes} alttext={product.sku}/>
+                                <GalleryCarousel gallery={product?.galleryImages?.nodes}/>
 							) : !isEmpty( product.image ) ? (
                                 <img
                                     src={ product?.image?.sourceUrl }
-                                 
+                                    alt="Product Image"
                                     width="100%"
                                     height="auto"
                                     srcSet={ product?.image?.srcSet }

@@ -7,7 +7,6 @@ export const PRODUCT_BY_SLUG_QUERY = gql` query Product($slug: ID!) {
 	  averageRating
 	  slug
 	  description
-	  
 	  sku
 	  galleryImages {
           nodes {
@@ -15,7 +14,6 @@ export const PRODUCT_BY_SLUG_QUERY = gql` query Product($slug: ID!) {
             title
             altText
             mediaItemUrl
-		
           }
       }
 	  image {
