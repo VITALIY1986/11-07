@@ -127,7 +127,7 @@ const News = [
 			
 		
 		  ], {
-			// timing option
+			// timing optio
 			duration: 5000 ,
 			
 			iterations: Infinity
