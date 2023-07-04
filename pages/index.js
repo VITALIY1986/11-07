@@ -332,13 +332,7 @@ const News = [
 		
 			<div className="">
 			    <div className="rounded-full shadow-cos relative w-80 h-80">
-			      	<Image
-					className="rounded-full"
-					src={Girlpng}
-					alt="Picture of the author"
-					
-					layout="fill"
-				  	/>
+			      	
 				 
 				</div>
 				

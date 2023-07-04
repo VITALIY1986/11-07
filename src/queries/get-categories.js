@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 /**
- * GraphQL categories query.
+ * GraphQL categorie query.
  */
 const GET_CATEGORIES_QUERY = gql`query {
 
