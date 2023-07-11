@@ -13,6 +13,7 @@ const PRODUCTS_AND_CATEGORIES_QUERY = gql`query {
           name
           slug
           databaseId
+         
           description
           image {
             id
@@ -23,7 +24,7 @@ const PRODUCTS_AND_CATEGORIES_QUERY = gql`query {
       }
     }
   }
-  productCategories(first: 3) {
+  productCategories(first: 100) {
     nodes {
       id
       name
@@ -157,6 +158,7 @@ mccm:  category(id: "dGVybTozMjg0") {
       productId: databaseId
       averageRating
       slug
+     
       description
       sku
       image {
@@ -212,7 +214,7 @@ mccm:  category(id: "dGVybTozMjg0") {
       averageRating
       slug
       description
-      shortDescription
+     
       sku
       image {
         id

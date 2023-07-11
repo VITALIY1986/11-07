@@ -8,7 +8,7 @@ const ParentCategoryBlock = ( props ) => {
 
 	return (
 		<div className="product w-1/2  md:w-1/3  my-3 flex justify-center text-center ">
-			<Link href={`/category/${category?.slug}`}>
+			<Link href={`/categorie/${category?.slug}`}>
 				<a>
 				<Image
 						className=" mx-3 "

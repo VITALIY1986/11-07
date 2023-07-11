@@ -10,6 +10,7 @@ export const PRODUCT_BY_CATEGORY_SLUG = gql` query PRODUCT_BY_CATEGORY_SLUG($slu
 		  productId: databaseId
 		  averageRating
 		  slug
+		  shortDescription
 		  description
 		  sku
 		  image {

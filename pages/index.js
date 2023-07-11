@@ -84,7 +84,17 @@ export default function Home (props) {
 			<h2 className="text-2xl ml-3 uppercase mt-20 text-center font-semibold">CATALOGE</h2>
 			<div className=" flex flex-wrap  justify-around my-10">
 				
-			
+				{ productCategories.length ? (
+							productCategories
+							.filter(category => category.slug !== "par-landing")
+							.filter(category => category.slug !== "uncategorized")
+							.filter(category => category.slug !== "vitamine-minerale")
+							.filter(category => category.slug !== "advertising-package")
+							.filter(category => category.slug !== "offers")
+							.filter(category => category.slug !== "aloe-vera-pacheta-3-1")
+							.filter(category => category.slug !== "pachete-promotionale")
+							.map( category => <ParentCategoryBlock category={ category }/> )
+						) : '' }
 			
 			</div>
 			
