@@ -29,9 +29,9 @@ const result = amount/interest;
 		undefined !== product && 'GroupProduct' !== product.__typename ? (
 			<div className="product mb-5   relative">
 
-{ product.featured  ? <div className="bg-red-400 rounded-full absolute right-2 top-2 z-10 text-white p-2">NEW</div>: ''}
+
 { product?.salePrice  ? <div className=" bg-red-400 rounded-full absolute left-2 top-2 z-10 text-white p-6 w-20 h-20 flex justify-center items-center">-{ procent.toFixed(0)}%</div> : ''}
-				<Link href={ `/product/${ product?.slug }`} >
+				<Link href={ `/produs/${ product?.slug }`} >
 					<a>
 						<Image
 							className="object-cover bg-gray-100"
@@ -49,12 +49,8 @@ const result = amount/interest;
 				<div className="product-info text-center pl-2 md:pl-3">
 					
 				
-					{/*{product?.regularPrice }/////{product?.salePrice }/////{product?.price}*/}
-                 {/*}   {product?.salePrice ?  <div className="">  <strike className="mr-1 text-red-200">₴{par.toFixed(2)}</strike>₴{product?.price}</div> :   <div className="">₴{par.toFixed(2)}</div>}*/}
 				 {product?.salePrice   ?  <div className='block mt-4'>  <strike className=" text-red-200 text-2xl ">{product?.regularPrice}<span ></span></strike><span className='ml-3 text-2xl bg-white rounded-full px-6 py-1 text-gray-500'>{product?.price}  lei</span></div> :   <div className=" text-2xl">{product?.price }<span className='ml-2'>lei</span></div>}
-				{/*	{product?.salePrice  ?  <div className={`${ isLoggedIn ? 'block' : 'hidden ' }`}> ₴{par.toFixed(4)}</div> :   ''}*/}
-				{/*	<div className="product-description text-sm text-gray-700 " dangerouslySetInnerHTML={{ __html: (product?.description)}}/>*/}
-			{/*	<Price salesPrice={product?.price} regularPrice={product?.regularPrice}/>*/}
+				
 					<AddToCartButton product={ product } />
 				</div>
 
